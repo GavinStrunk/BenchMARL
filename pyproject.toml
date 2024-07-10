@@ -1,4 +1,20 @@
+[tool.poetry]
+name = "benchmarl"
+version = "0.1.0"
+description = ""
+authors = ["Gavin Strunk <gavin.strunk@ssci.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+torchrl = "^0.4.0"
+tqdm = "^4.66.4"
+hydra-core = "^1.3.2"
+vmas = "^1.4.2"
+pettingzoo = {extras = ["all"], version = "^1.24.3"}
+smacv2 = {git = "https://github.com/oxwhirl/smacv2.git"}
+
 
 [build-system]
-requires = ["setuptools"]
-build-backend = "setuptools.build_meta"
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
